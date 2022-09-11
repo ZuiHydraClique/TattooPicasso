@@ -1,0 +1,12 @@
+.alice-carousel {
+    margin-top: 100px;
+    height: 100px;
+}
+
+img {
+    width: 20%;
+}
+
+.alice-carousel__stage-item {
+    text-align: center;
+}

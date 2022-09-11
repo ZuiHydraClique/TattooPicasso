@@ -3,13 +3,13 @@ import './App.css';
 
 /*Components*/
 import NavBar from './Components/NavBar/NavBar.js';
+import Carousel from './Components/Carousel/Carousel.js';
 
 function App() {
   return (
     <div>
-        <NavBar />
-        
-
+          <NavBar />
+          <Carousel />
     </div>
   );
 }
