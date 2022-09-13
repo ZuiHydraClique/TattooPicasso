@@ -1,32 +1,180 @@
-#navbar-content {
+#whole-navbar {
     width: 100%;
+    height: 200px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 #logo-navbar {
-    width: 100%;
+    margin-top: 20px;
+    margin-left: 20%;
+    width: 200px;
+    height: 200px;
 }
 
-/*Containers*/
 #left-side-navbar {
-    width: 15%;
+    width: 200px;
+    height: 200px;
 }
 
 #middle-side-navbar {
-    width: 70%;
     display: flex;
     flex-direction: row;
-    gap: 10%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 5%;
+    font-size: 22px;
 }
 
-#right-side-navbar {
-    width: 15%;
-    text-align: end;
+.right-side-navbar {
+    display: flex;
+    margin-top: 5px; 
+    justify-content: flex-end;
+    width: 150px;
+    margin-right: 20px;
 }
 
+
+/*NAVBAR CONTENT*/
+#navbar-registers {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.register-item {
+    cursor: pointer;
+}
+
+.register-item:hover {
+    background-color: white;
+    color: black;
+}
+
+#navbar-content {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+/*SPACERS*/
 #navbar-h-spacer {
     width: 100%;
     height: 2px;
-    background-color: black;
+    margin-left: 5%;
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px white; 
+}
+
+
+
+/*GENERAL HAMBURGER MENU*/
+.hamburger-spacer {
+    padding: 2px;
+    background: #FFF;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.hamburger-spacer:before {
+    content: "";
+    background: linear-gradient( 30deg, #D8D8D8, #858485, #FEFEFF);
+    position: absolute;
+    background-size: 1000%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
+    animation: glowingHamSpacer 10s linear infinite;
+    opacity: 0.7;
+    transition: opacity 1s ease;
+    border-radius: 10px;
+}
+
+@keyframes glowingHamSpacer {
+    0% {
+        background-position: 100% 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.hamburger-spacer:active {
+    color: #FFF;
+}
+
+.hamburger-spacer:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.hamburger-select {
+    height: 40px;
+    width: 50px;
+    transition: ease;
+    transition-duration: 0.3s;
+}
+
+.hamburger-select:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
+
+/*CLOSED HAMBURGER SELECT*/
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1500;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0);
+    overflow: hidden;
+    transition: 0.5s; 
+
+    display: flex;
+    flex-direction: column;
+}
+
+.closed-hamburger-select {
+    margin-top: 35px;
+    padding-right: 20px;
+}
+
+.all-hamburger-items {
+    padding-top: 100px; 
+    padding-top: 100px; 
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+}
+
+.hamburger-item {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
 }

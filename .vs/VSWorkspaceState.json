@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\tattoo-picasso",
+    "\\tattoo-picasso\\public",
+    "\\tattoo-picasso\\src",
+    "\\tattoo-picasso\\src\\Components"
   ],
+  "SelectedNode": "\\tattoo-picasso",
   "PreviewInSolutionExplorer": false
 }
