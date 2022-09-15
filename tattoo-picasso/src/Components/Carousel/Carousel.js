@@ -1,6 +1,8 @@
 import React from 'react';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+
+import { useState } from 'react';
+import Slider from 'react-slick';
+
 import Image1 from './CarouselImages/Unbenannt1.png';
 import Image2 from './CarouselImages/Unbenannt2.png';
 import Image3 from './CarouselImages/Unbenannt3.png';
@@ -13,24 +15,57 @@ import './Carousel.css';
 
 const handleDragStart = (e) => e.preventDefault();
 
-const items = [
-    <img id="carousel-image" src={Image1} alt="1" onDragStart={handleDragStart} role="presentation" />,
-    <img id="carousel-image" src={Image2} alt="2" onDragStart={handleDragStart} role="presentation" />,
-    <img id="carousel-image" src={Image3} alt="3" onDragStart={handleDragStart} role="presentation" />,
-    <img id="carousel-image" src={Image4} alt="4" onDragStart={handleDragStart} role="presentation" />,
-    <img id="carousel-image" src={Image5} alt="5" onDragStart={handleDragStart} role="presentation" />,
-    <img id="carousel-image" src={Image6} alt="6" onDragStart={handleDragStart} role="presentation" />,
-    <img id="carousel-image" src={Image7} alt="7" onDragStart={handleDragStart} role="presentation" />
-];
+const images = [
+    Image1, Image2, Image3, Image4, Image5, Image6, Image7
+]
+
 
 function Carousel() {
+
+    //const NextArrow = ({onClick}) => {
+    //  return (
+    //    <div onClick={onClick}>
+    //        <img />
+    //    </div>
+    //    )
+    //}
+
+    //const PrevArrow = ({onClick}) => {
+    //  return (
+    //    <div onClick={onClick}>
+    //        <img />
+    //    </div>
+    //    )
+    //}
+
+    const [imageIndex, setImageIndex] = useState(0)
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        lazyLoad: true,
+        speed: 700,
+        slidesToShow: 3,
+        centerMode: true,
+        centerPadding: 0,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        //nextArrow: <NextArrow />
+        //prevArrow: <PrevArrow />
+        beforeChange: (current, next) => setImageIndex(next)
+    }
+
     return (
-        <AliceCarousel
-            controlsStrategy="responsive"
-            animationEasingFunction="ease-in-out"
-            mouseTracking="true" infinite="true"
-            animationType="ease" autoPlayStrategy="all"
-            autoPlay="true" autoPlayInterval="5000" items={items}/>
+        <div id="whole-slider">
+            <Slider {...settings}>
+                {images.map((img, idx) => (
+                    <div className={idx === imageIndex ? "slide active-slide" : "slide nonactive-slide"}>
+                        <img id="carousel-image" src={img} alt={img} />
+                    </div>
+                ))}
+            </Slider>
+        </div>
+
     );
 }
 
