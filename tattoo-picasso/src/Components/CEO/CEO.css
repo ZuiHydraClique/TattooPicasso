@@ -1,6 +1,6 @@
 .whole-ceo {
-    width: 90%;
-    margin-left: 5%;
+    width: 74.5%;
+    margin-left: 13%;
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -8,7 +8,7 @@
 }
 
 #ceo-image {
-    width: 35%;
+    width: 25%;
     border: 1px solid white;
 }
 

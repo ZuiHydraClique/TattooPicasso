@@ -1,0 +1,60 @@
+#whole-tattowierer {
+    width: 74.5%;
+    margin-left: 13%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#tat-headline {
+    font-size: 26px;
+    font-weight: bold;
+    width: 200px;
+    height: 300px;
+    background-color: grey;
+    border: 1px solid white;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.single-artist {
+    width: 200px;
+    height: 300px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: ease;
+    transition-duration: 0.5s;
+}
+
+.single-artist:hover {
+    opacity: 0.7;
+    transition: ease;
+    transition-duration: 0.5s;
+}
+
+
+/*ARTIST PICTURES*/
+.bauchbinde {
+    margin-top: -150px;
+}
+
+.bauchbinde-inhalt {
+    margin-top: -80px;
+    padding-left: 20px;
+}
+
+.artist-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.artist-attributes {
+    font-size: 14px;
+}
+
+.artist-image {
+    width: 100%;
+}

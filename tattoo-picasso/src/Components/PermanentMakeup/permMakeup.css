@@ -1,0 +1,30 @@
+#whole-perm {
+    width: 74.5%;
+    margin-left: 13%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#perm-headline {
+    font-size: 26px;
+    font-weight: bold;
+    width: 200px;
+    height: 300px;
+    background-color: grey;
+    border: 1px solid white;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.single-perm {
+    width: 200px;
+    height: 300px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: ease;
+    transition-duration: 0.5s;
+}
