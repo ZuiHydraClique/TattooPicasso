@@ -1,0 +1,47 @@
+#whole-tattowierer {
+    width: 74.5%;
+    margin-left: 13%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#tat-headline {
+    font-size: 26px;
+    font-weight: bold;
+    width: 200px;
+    height: 300px;
+    background-color: grey;
+    border: 1px solid white;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+#blue-moon-on-title {
+    width: 50px;
+}
+
+#pink-moon-on-title {
+    width: 50px;
+}
+
+#mitarbeiter {
+    margin-top: 50px;
+}
+
+.artist-description {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.whole-artist-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}

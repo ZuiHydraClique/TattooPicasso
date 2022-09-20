@@ -5,9 +5,8 @@ import './App.css';
 import NavBar from './Components/NavBar/NavBar.js';
 import Carousel from './Components/Carousel/Carousel.js';
 import CEO from './Components/CEO/CEO.js';
-import Tattowierer from './Components/Tattowierer/Tattowierer.js';
-import PermMakeup from './Components/PermanentMakeup/PermMakeup.js';
 import Footer from './Components/Footer/Footer';
+import AllArtists from './Components/Aritsts/AllArtists';
 
 function App() {
     return (
@@ -29,11 +28,7 @@ function App() {
 
             <div style={{ height: "300px" }} />
 
-            <Tattowierer />
-
-            <div style={{ height: "300px" }} />
-
-            <PermMakeup /> 
+            <AllArtists />
 
             <div style={{ height: "600px" }} />
 

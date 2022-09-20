@@ -13,8 +13,6 @@ import Image7 from './CarouselImages/Unbenannt7.png';
 
 import './Carousel.css';
 
-const handleDragStart = (e) => e.preventDefault();
-
 const images = [
     Image1, Image2, Image3, Image4, Image5, Image6, Image7
 ]
