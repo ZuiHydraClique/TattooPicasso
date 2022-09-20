@@ -7,6 +7,7 @@ import Carousel from './Components/Carousel/Carousel.js';
 import CEO from './Components/CEO/CEO.js';
 import Footer from './Components/Footer/Footer';
 import AllArtists from './Components/Aritsts/AllArtists';
+import GoogleMaps from './Components/googlemaps/GoogleMaps.js';
 
 function App() {
     return (
@@ -29,6 +30,10 @@ function App() {
             <div style={{ height: "300px" }} />
 
             <AllArtists />
+
+            <div style={{ height: "500px" }} />
+
+            <GoogleMaps />
 
             <div style={{ height: "600px" }} />
 

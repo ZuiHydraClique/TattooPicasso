@@ -5,12 +5,14 @@
 }
 
 #footer-content {
+    width: 90%;
     height: 250px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-left: 100px;
     margin-top: 30px;
-    gap: 100px;
+
 }
 
 .footer-item {
@@ -23,4 +25,30 @@
     font-size: 26px;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+#footer-left-content {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+#footer-right-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#follow-us {
+    font-size: 20px;
+}
+
+#footer-socails {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.socials-pic {
+    cursor: pointer;
 }

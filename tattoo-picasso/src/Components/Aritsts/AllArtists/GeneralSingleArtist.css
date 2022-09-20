@@ -1,3 +1,7 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
 .single-artist {
     width: 200px;
     height: 300px;
@@ -47,7 +51,6 @@
 .overlay {
     width: 0px;
     height: 0px;
-    margin-left: -10%;
     position: fixed;
     z-index: 1500;
     left: 0;
@@ -68,6 +71,26 @@
 
 
 /*OVERLAY*/
+
+/*TATTOWIERER LINE*/
+#moon-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 40px;
+}
+
+#overlay-title {
+    font-size: 24px;
+}
+
+#overlay-title-image {
+    width: 40px;
+}
+
+
 
 /*CLOSE-BUTTON*/
 .close-button-line {
@@ -91,9 +114,10 @@
     transition-duration: 0.3s;
 }
 
-/*OVERLAY-CONTENT*/
 
+/*OVERLAY-CONTENT*/
 .overlay-content {
+    width: 100%;
     display: flex;
     flex-direction: row;
     opacity: 0;
@@ -102,22 +126,140 @@
     transition-duration: 0.7s;
 }
 
-#artist-overlay-pic {
-    margin-left: 9%;
+#image-container {
     width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#artist-overlay-pic {
+    width: 600px;
+    margin-bottom: 300px;
 }
 
 #artist-text-content {
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 50px;
 }
 
-#artist-headline {
-    font-size: 40px;
+#only-text {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+#appointment-container {
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#appointment-inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#artist-attributes {
+    margin-top: 140px;
+}
+
+#text-and-slider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+.further-artist-attributes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    margin-top: 10px;
+}
+
+/*TEXT*/
+
+.appointment-detail {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: end;
+}
+
+#appointment-headline {
+    width: 100%;
+    font-weight: bold;
+    text-align: end;
+}
+
+#artist-headline-artistname {
+    font-size: 50px;
+}
+
+#artist-headline-realname {
+    margin-top: 30px;
+    font-size: 30px;
+    color: blueviolet;
 }
 
 #artist-text {
     font-size: 20px;
+}
+
+#themes-headline {
+    margin-top: 80px;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.single-theme {
+    color: green;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#appointment-headline {
+    font-size: 30px;
+}
+
+/*CAROUSELS*/
+
+#whole-slider-artist {
+    width: 900px;
+    height: 600px;
+    margin-top: 250px;
+}
+
+.slide-artists img {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid white;
+}
+
+.slide-artists {
+    transition: transform 700ms;
+    opacity: 1;
+}
+
+.active-slide {
+    opacity: 1;
+    z-index: 10;
+}
+
+.nonactive-slide {
+    z-index: 0;
+}
+
+.slick-dots li.slick-active button:before {
+    margin-top: 10px;
+    color: white;
+}
+
+.slick-dots li button:before {
+    margin-top: 12px;
+    color: white;
 }
