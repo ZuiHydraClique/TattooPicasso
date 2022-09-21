@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import './NavBar.css';
 /*import { Link } from 'react-scroll';*/
 
@@ -6,11 +7,24 @@ import './NavBar.css';
 import tattooPicassoLogo from './NavbarImages/tattoo-picasso-logo.png';
 
 function NavBar() {
+
+    const [navbar, setNavbar] = useState(false);
+
+    const changeSize = () => {
+        if(window.scrollY >= 200) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    };
+
+    window.addEventListener('scroll', changeSize);
+
     return (
-        <div id="whole-navbar">
+        <div className={navbar ? 'whole-navbar active' : 'whole-navbar'}>
 
             <div className="side-navbar">
-                <div id="left-side-navbar">
+                <div className={navbar ? 'left-side-navbar activeLeft' : 'left-side-navbar'}>
                     <div className="navbar-text">
                         Reiter 1
                     </div>
@@ -22,11 +36,11 @@ function NavBar() {
             </div>
 
             <div id="middle-side-navbar">
-                <img id="logo-navbar" src={tattooPicassoLogo} alt="logo" />
+                <img className={navbar ? 'logo-navbar activeL' : 'logo-navbar'} src={tattooPicassoLogo} alt="logo" />
             </div>
 
             <div className="side-navbar">
-                <div id="right-side-navbar">
+                <div className={navbar ? 'right-side-navbar activeRight' : 'right-side-navbar'}>
                     <div className="navbar-text">
                         Reiter 3
                     </div>

@@ -8,6 +8,7 @@ import CEO from './Components/CEO/CEO.js';
 import Footer from './Components/Footer/Footer';
 import AllArtists from './Components/Aritsts/AllArtists';
 import GoogleMaps from './Components/googlemaps/GoogleMaps.js';
+import ArtGallery from './Components/ArtGallery/ArtGallery';
 
 function App() {
     return (
@@ -30,6 +31,10 @@ function App() {
             <div style={{ height: "300px" }} />
 
             <AllArtists />
+
+            <div style={{ height: "300px" }} />
+            
+            <ArtGallery />
 
             <div style={{ height: "500px" }} />
 

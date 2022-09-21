@@ -1,4 +1,4 @@
-#whole-navbar {
+.whole-navbar {
     z-index: 1000;
     position: fixed;
     top: 0;
@@ -7,6 +7,14 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    transition: ease;
+    transition-duration: 1.5s;
+}
+
+.whole-navbar.active {   
+    height: 180px;
+    transition: ease;
+    transition-duration: 1.5s;
 }
 
 /*NAVBAR TEXT*/
@@ -25,28 +33,57 @@
 }
 
 /*LEFT SIDE NAVBAR*/
-#left-side-navbar {
+.left-side-navbar {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     gap: 90px;
     margin-top: 200px;
     margin-right: 50px;
+    transition: ease;
+    transition-duration: 1.5s;
 }
 
+.left-side-navbar.activeLeft {
+    margin-top: 40px;
+    transition: ease;
+    transition-duration: 1.5s;
+}
+
+
+
 /*MIDDLE SIDE NAVBAR*/
-#logo-navbar {
+.logo-navbar {
     z-index: 100;
     width: 300px;
     height: 340px;
+    transition: ease;
+    transition-duration: 1.5s;
 }
 
+.logo-navbar.activeL {
+    z-index: 100;
+    width: 180px;
+    height: 180px;
+    transition: ease;
+    transition-duration: 1.5s;
+}
+
+
 /*RIGHT SIDE NAVBAR*/
-#right-side-navbar {
+.right-side-navbar {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 90px;
     margin-top: 200px;
     margin-left: 50px;
+    transition: ease;
+    transition-duration: 1.5s;
+}
+
+.right-side-navbar.activeRight {
+    margin-top: 40px;
+    transition: ease;
+    transition-duration: 1.5s;
 }
