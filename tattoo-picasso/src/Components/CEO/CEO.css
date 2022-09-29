@@ -40,7 +40,12 @@
 }
 
 #ceo-name-headline {
-    color: #cab600;
+    background: url(CEOImages/gold.png) no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+
     font-size: 40px;
 }
 

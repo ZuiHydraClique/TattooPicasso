@@ -4,15 +4,13 @@
 }
 
 #bottom-pic-container {
-    margin-top: 100px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 135px;
-    margin-bottom: 100px;
 }
-/*
+
 #pic-under-left {
     width: 100%;
     background-image: url("./Components/NavBar/NavbarImages/verschnörkelung-links-unten.png");
@@ -28,4 +26,14 @@
     background-position: right bottom;
     background-size: contain;
 
-}*/
+}
+
+@media only screen and (max-width: 580px) {
+    #pic-under-left {
+       background-size: 6em 6em;
+    }
+    
+    #pic-under-right {
+        background-size: 6em 6em;
+    }
+}

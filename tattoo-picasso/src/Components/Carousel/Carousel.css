@@ -31,7 +31,7 @@
 }
 
 .active-slide-one {
-    transform: scale(0.7);
+    transform: scale(0.85);
     opacity: 1;
     z-index: 10;
 }
@@ -75,12 +75,12 @@
     } 
 
     .slick-dots li.slick-active button:before {
-        margin-top: -38px;
+        margin-top: -13px;
         color: white;
     }
     
     .slick-dots li button:before {
-        margin-top: -35px;
+        margin-top: -10px;
         color: white;
     }
 
@@ -89,12 +89,12 @@
 
 @media only screen and (max-width: 405px) {
     .slick-dots li.slick-active button:before {
-        margin-top: -5px;
+        margin-top: 15px;
         color: white;
     }
     
     .slick-dots li button:before {
-        margin-top: 0px;
+        margin-top: 20px;
         color: white;
     }
 }

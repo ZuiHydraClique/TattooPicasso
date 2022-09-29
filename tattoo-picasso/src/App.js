@@ -40,16 +40,16 @@ function App() {
                 <div id="maps-scroll" style={{ height: "150px" }}></div>
                 <GoogleMaps />
 
+                
+                <div style={{height: "200px"}}></div>
+                <div id="contact-scroll"></div>
+                <Footer />
                 <div id="bottom-pic-container">
                     <div id="pic-under-left">
                     </div>
                     <div id="pic-under-right">
                     </div>
                 </div>
-
-                
-                <div id="contact-scroll"></div>
-                <Footer />
             </div>
         </div>
   );

@@ -133,13 +133,29 @@
     margin-top: 60px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
+    .right-side-navbar {
+        margin-left: 10%;
+    }
 
+    .left-side-navbar {
+        margin-left: -10%;
+    }
 }
 
 
 @media only screen and (max-width: 580px) {
-
+.pic-left-up {
+        background-size: 6em 6em;
+        transition: ease;
+        transition-duration: 1.5s;
+    }
+    
+    .pic-right-up {
+        background-size: 6em 6em;
+        transition: ease;
+        transition-duration: 1.5s;
+    }
     .navbar-text {
         font-size: 35px;
     }
@@ -183,6 +199,10 @@
 
 @media only screen and (max-width: 560px) {
     
+    .navbar-text {
+        font-size: 28px;
+    }
+
     #whole-navbar {
         height: 150px;
     }
@@ -193,30 +213,23 @@
     }
 
     .left-side-navbar {
-        margin-top: 60px; 
+        margin-top: 60px;
+        margin-left: -3%;
     }
 
     .right-side-navbar {
-        margin-top: 60px; 
-    }
+        margin-top: 60px;
+        margin-left: 3%;
+    } 
+    
 }
 
 @media only screen and (max-width: 450px) {
-    .pic-left-up {
-        background-size: 6em 6em;
-        transition: ease;
-        transition-duration: 1.5s;
-    }
     
-    .pic-right-up {
-        background-size: 6em 6em;
-        transition: ease;
-        transition-duration: 1.5s;
-    }
 }
 
 @media only screen and (max-width: 410px) {
-
+   
     #whole-navbar {
         height: 130px;
     }
@@ -265,11 +278,13 @@
 
 @media only screen and (max-width: 390px) {
     .left-side-navbar {
-        margin-top: 45px; 
+        margin-top: 45px;
+        margin-left: -5%; 
     }
 
     .right-side-navbar {
         margin-top: 45px; 
+        margin-left: 3%; 
     }
 }
 

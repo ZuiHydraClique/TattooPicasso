@@ -1,5 +1,11 @@
 #place-headline {
-    color: #cab600;
+
+    background: url(gold.png) no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+
     font-size: 50px;
     margin-bottom: 60px;
 }
