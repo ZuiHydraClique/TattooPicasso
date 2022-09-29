@@ -1,3 +1,4 @@
 #whole-body {
-    background-image: repeating-linear-gradient(rgb(22, 22, 22),black);
+    background-color: black;
+    overflow: hidden;
 }

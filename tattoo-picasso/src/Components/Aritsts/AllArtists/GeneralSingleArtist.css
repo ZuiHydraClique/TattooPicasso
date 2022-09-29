@@ -1,7 +1,6 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-
 .single-artist {
     width: 200px;
     height: 300px;
@@ -27,7 +26,7 @@
 }
 
 .bauchbinde {
-    margin-top: -300px;
+    margin-top: -120px;
 }
 
 .bauchbinde-inhalt {
@@ -72,32 +71,19 @@
 
 /*OVERLAY*/
 
-/*TATTOWIERER LINE*/
-#moon-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-right: 40px;
-}
-
-#overlay-title {
-    font-size: 24px;
-}
-
-#overlay-title-image {
-    width: 40px;
-}
-
-
-
-/*CLOSE-BUTTON*/
+/*CLOSE-BUTTON-LINE*/
 .close-button-line {
+    width: 95%;
+    margin-left: 4%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    gap: 10px; 
     margin-top: 10px;
-    margin-left: -10px;
+}
+
+#type-of-artist {
+    font-size: 24px;
 }
 
 #close-button {
@@ -115,123 +101,161 @@
 }
 
 
-/*OVERLAY-CONTENT*/
+
+
+
+#overlay-artist-name  {
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+
+
+
+/*ACTUAL-OVERLAY-CONTENT*/
 .overlay-content {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
+    height: 80%;
+    margin-bottom: 5%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     opacity: 0;
     
     transition: ease;
     transition-duration: 0.7s;
 }
 
-#image-container {
-    width: 600px;
+/*ONLY TEXT AN IMAGE*/
+#overlay-content-middle {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 50%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    justify-content: space-between;
+}
+
+#img-and-theme {
+    display: flex;
+    flex-direction: row;
+    width: 66%;
+    justify-content: space-between;
+}
+
+
+/*LEFT SIDE*/
+#overlay-left-side {
+    width: 33%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#tat-state {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10%;
+}
+
+#state-available {
+    color: greenyellow;
+}
+
+#sincewhen-container {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+/*MIDDLE SIDE*/
+#overlay-middle-side {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #artist-overlay-pic {
-    width: 600px;
-    margin-bottom: 300px;
+    border: 1px solid white;
+    margin-top: 20px;
+    width: 50%;
+
+    transition: ease;
+    transition-duration: 0.5s;
+}
+
+#text-under-pic {
+    display: none;
+    opacity: 0;
+}
+
+#theme-below-pic {
+    display: flex; 
+    flex-direction: row;
+    gap: 15px;
+}
+
+.below-pic-single-theme {
+    display: none;
+}
+
+/*RIGHT SIDE*/
+#overlay-right-side {
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 #artist-text-content {
     color: white;
     display: flex;
     flex-direction: column;
-}
-
-#only-text {
-    display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-}
-
-#appointment-container {
-    margin-top: 20px;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-}
-
-#appointment-inner-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-#artist-attributes {
-    margin-top: 140px;
-}
-
-#text-and-slider {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 150px;
-}
-
-.further-artist-attributes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 200px;
-    margin-top: 10px;
-}
-
-/*TEXT*/
-
-.appointment-detail {
-    font-size: 20px;
-    margin-top: 10px;
-    text-align: end;
-}
-
-#appointment-headline {
-    width: 100%;
-    font-weight: bold;
-    text-align: end;
-}
-
-#artist-headline-artistname {
-    font-size: 50px;
-}
-
-#artist-headline-realname {
-    margin-top: 30px;
-    font-size: 30px;
-    color: blueviolet;
-}
-
-#artist-text {
-    font-size: 20px;
+    justify-content: flex-start;
 }
 
 #themes-headline {
-    margin-top: 80px;
+    margin-top: 20px;
     font-size: 28px;
     margin-bottom: 10px;
+    text-align: end;
 }
 
 .single-theme {
+    text-align: end;
     color: green;
     font-size: 20px;
     margin-top: 10px;
 }
 
-#appointment-headline {
-    font-size: 30px;
+
+/*SLIDER*/
+
+#whole-slider-container {
+    width: 92%;
+    margin-left: 4%;
+    margin-top: -5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-/*CAROUSELS*/
+#whole-slider-artist-five {
+    width: 100%;
+    margin-top: 100px;
+}
 
-#whole-slider-artist {
-    width: 900px;
-    height: 600px;
-    margin-top: 250px;
+#whole-slider-artist-three {
+    display: none;
 }
 
 .slide-artists img {
@@ -250,7 +274,7 @@
     z-index: 10;
 }
 
-.nonactive-slide {
+.nonactive-slide-artist {
     z-index: 0;
 }
 
@@ -262,4 +286,105 @@
 .slick-dots li button:before {
     margin-top: 12px;
     color: white;
+}
+
+@media only screen and (max-width: 1400px) {
+    
+    #artist-overlay-pic {
+        width: 60%;
+
+        transition: ease;
+        transition-duration: 0.5s;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+    
+    #artist-overlay-pic {
+        width: 70%;
+
+        transition: ease;
+        transition-duration: 0.5s;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    
+    #text-under-pic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+
+        transition: ease;
+        transition-duration: 0.7s;
+    }
+
+    #overlay-left-side { 
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 680px) {
+    
+    .below-pic-single-theme {
+        display: flex;
+        width: 80px; 
+        justify-content: center;
+        color: green;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    #overlay-right-side {
+        display: none;
+    }
+
+    #overlay-content-middle {
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 680px) { 
+
+    #artist-overlay-pic {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) { 
+
+    #artist-overlay-pic {
+        width: 120%;
+    }
+
+} 
+
+@media only screen and (max-width: 450px) { 
+
+    #whole-slider-artist-five {
+        display: none;
+    }
+
+    #whole-slider-artist-three {
+        display: block;
+        width: 100%;
+        margin-top: 100px;
+    }
+} 
+
+
+
+@media only screen and (max-width: 390px) { 
+
+    #artist-overlay-pic {
+        width: 140%;
+    }
+
 }

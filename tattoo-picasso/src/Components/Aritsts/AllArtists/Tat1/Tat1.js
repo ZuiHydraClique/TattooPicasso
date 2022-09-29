@@ -39,7 +39,7 @@ function Tat1() {
 
     const [imageIndex, setImageIndex] = useState(0)
 
-    const settingsTat = {
+    const settingsTatFive = {
         dots: true,
         infinite: true,
         lazyLoad: true,
@@ -54,12 +54,26 @@ function Tat1() {
         beforeChange: (current, next) => setImageIndex(next)
     }
 
+    const settingsTatThree = {
+        dots: true,
+        infinite: true,
+        lazyLoad: true,
+        speed: 700,
+        slidesToShow: 3,
+        centerMode: true,
+        centerPadding: 0,
+        autoplay: true,
+        autoplaySpeed: 8000,
+        //nextArrow: <NextArrow />
+        //prevArrow: <PrevArrow />
+        beforeChange: (current, next) => setImageIndex(next)
+    }
+
     return (
         <div>
             <div className="single-artist"  onClick={openNav}>
                 <img className="artist-image" src={tat1} alt="" />
                 <div className="bauchbinde">
-                    <img id="moon-on-single-artist" src={moonBlue} alt=""/>
                     <img src={bauchbinde} alt=""/>
                     <div className="bauchbinde-inhalt">
                         <div className="artist-name">
@@ -72,59 +86,95 @@ function Tat1() {
                 </div>
             </div>
             
+            {/*OVERLAY*/}
             <div id="tat1-myNav" className="overlay">
+
+                {/*UPPER LINE*/}
                 <div className="close-button-line">
-                    <div id="moon-title">
-                        <div id="overlay-title">Tattowierer</div>
-                        <img id="overlay-title-image" src={moonBlue} alt=""/>
+                    <div id="type-of-artist">
+                        Tattowierer
                     </div>
                     <img src={closeButton} alt="close" id="close-button" onClick={closeNav} />
                 </div>
 
+                {/*ACTUAL CONTENT*/}
                 <div className="overlay-content" id="tat1-content">
-
-                    <div id="image-container">
-                        <img src={tat1Overlay} alt="artist1" id="artist-overlay-pic" />
-                    </div>
-                    
-                    <div id="text-and-slider">
-                        <div id="only-text">
-                            
-                            <div id="artist-text-content">
-                                <div id="artist-headline-artistname">Künstlername</div>
-                                <div id="artist-headline-realname">bürgerlicher Name</div>
-                                <div id="themes-headline">Themen</div>
-                                <div className="single-theme">Blackwork</div>
-                                <div className="single-theme">Mandala</div>
-                                <div className="single-theme">Shitass</div>
-                            </div>  
-
-                            <div id="appointment-container">
-                                <div id="appointment-inner-container">
-                                    <div id="appointment-headline">Termine</div>
-                                    <div className="appointment-detail">Termine1</div>
-                                    <div className="appointment-detail">Termine2</div>
-                                    <div className="appointment-detail">Termine3</div>
-                                    
-                                    <div id="artist-attributes">
-                                        <div className="further-artist-attributes">
-                                            <div>tättowiert seit:</div>
-                                            <div className="attribute-value">2022</div>
-                                        </div>
-
-                                        <div className="further-artist-attributes">
-                                            <div>geboren am:</div>
-                                            <div className="attribute-value">02.03.2022</div>
-                                        </div>
+                    {/*TEXTS AND IMAGE*/}
+                    <div id="overlay-content-middle">
+                        {/*LEFT SIDE*/}
+                        <div id="overlay-left-side">
+                            <div id="tat-state">
+                                <div>
+                                    Status:
+                                </div>
+                                <div id="state-available">
+                                    verfügbar
+                                </div>
+                            </div>
+                            <div id="sincewhen-container">
+                                <div>
+                                    tattowiert seit:
+                                </div>
+                                <div>
+                                    2022
+                                </div>
+                            </div>
+                        </div>
+                        {/*MIDDLE SIDE*/}
+                        <div id="overlay-middle-side">
+                            <div id="overlay-artist-name">
+                                Künstlername
+                            </div>
+                            <img src={tat1} alt="artist1" id="artist-overlay-pic" />
+                            <div id="text-under-pic">
+                                <div id="tat-state">
+                                    <div>
+                                        Status:
                                     </div>
-                                    
+                                    <div id="state-available">
+                                        verfügbar
+                                    </div>
+                                </div>
+                                <div id="sincewhen-container">
+                                    <div>
+                                        tattowiert seit:
+                                    </div>
+                                    <div>
+                                        2022
+                                    </div>
+                                </div>
+                                <div id="theme-below-pic">
+                                    <div className="below-pic-single-theme">Blackwork</div>
+                                    <div className="below-pic-single-theme">Mandala</div>
+                                    <div className="below-pic-single-theme">Shitass</div>
                                 </div>
                             </div>
                             
                         </div>
-                        
-                        <div id="whole-slider-artist">
-                            <Slider {...settingsTat}>
+                        {/*RIGHT SIDE*/}
+                        <div id="overlay-right-side">
+                            <div id="artist-text-content">
+                                <div id="themes-headline">Themen</div>
+                                <div className="single-theme">Blackwork</div>
+                                <div className="single-theme">Mandala</div>
+                                <div className="single-theme">Shitass</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    {/*SLIDER*/}
+                    <div id="whole-slider-container">
+                        <div id="whole-slider-artist-five">
+                            <Slider {...settingsTatFive}>
+                                {images.map((img, idx) => (
+                                    <div className={idx === imageIndex ? "slide-artists active-slide" : "slide-artists nonactive-slide"}>
+                                        <img src={img} alt={img} />
+                                    </div>
+                                ))}
+                            </Slider>
+                        </div>
+                        <div id="whole-slider-artist-three">
+                            <Slider {...settingsTatThree}>
                                 {images.map((img, idx) => (
                                     <div className={idx === imageIndex ? "slide-artists active-slide" : "slide-artists nonactive-slide"}>
                                         <img src={img} alt={img} />
@@ -135,9 +185,7 @@ function Tat1() {
                     </div>
                     
                 </div>
-
             </div>
-        
         </div>
         
 

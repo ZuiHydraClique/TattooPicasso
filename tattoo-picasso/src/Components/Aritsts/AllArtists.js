@@ -15,50 +15,46 @@ import moonPink from './AllArtists/GeneralArtistImages/moonPink.png';
 
 function AllArtists() {
     return (
-        <div id="whole-tattowierer">
-            
-            <div id="tat-headline">
-                <div id="mitarbeiter">Mitarbeiter</div>
-                <div className="whole-artist-description">
-                    <img id="pink-moon-on-title" src={moonBlue} alt=""/>
-                    <div className="artist-description">Tattowierer</div>
+        <div id="whole-artists-section">
+            <div id="employees-headline">unsere Künstler</div>
+            <div id="whole-tattowierer">
+                
+                {/*
+                <div id="tat-headline">
+                    <div id="mitarbeiter">Mitarbeiter</div>
+                    <div className="whole-artist-description">
+                        <img id="pink-moon-on-title" src={moonBlue} alt=""/>
+                        <div className="artist-description">Tattowierer</div>
+                    </div>
+                    <div className="whole-artist-description">
+                        <img id="blue-moon-on-title" src={moonPink} alt=""/>
+                        <div className="artist-description">Permanent<br/>Makeup</div>
+                    </div>
+                </div>*/}
+                <div>
+                    <Tat1 />
                 </div>
-                <div className="whole-artist-description">
-                    <img id="blue-moon-on-title" src={moonPink} alt=""/>
-                    <div className="artist-description">Permanent<br/>Makeup</div>
+
+                <div>
+                    <Tat2 />
                 </div>
+
+                <div>
+                    <Tat3 />
+                </div>
+
+                <div>
+                    <Tat4 />
+                </div>
+
+                <div>
+                    <Perm1 />
+                </div>
+
             </div>
-
-            <div>
-                <Tat1 />
-            </div>
-
-            <div>
-                <Tat2 />
-            </div>
-
-            <div>
-                <Tat3 />
-            </div>
-
-            <div>
-                <Tat4 />
-            </div>
-
-            <div>
-                <Tat5 />
-            </div>
-
-            <div>
-                <Tat6 />
-            </div>
-
-
-            <div>
-                <Perm1 />
-            </div>
-
         </div>
+        
+        
   );
 }
 

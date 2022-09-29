@@ -60,8 +60,7 @@ function Tat5() {
             <div className="single-artist"  onClick={openNav}>
                 <img className="artist-image" src={tat5} alt="" />
                 <div className="bauchbinde">
-                    <img id="moon-on-single-artist" src={moonBlue} alt=""/>
-                    <img src={bauchbinde} alt=""/>
+                    <img src={bauchbinde} alt=""/> 
                     <div className="bauchbinde-inhalt">
                         <div className="artist-name">
                             Künstlername
@@ -77,7 +76,6 @@ function Tat5() {
                 <div className="close-button-line">
                     <div id="moon-title">
                         <div id="overlay-title">Tattowierer</div>
-                        <img id="overlay-title-image" src={moonBlue} alt=""/>
                     </div>
                     <img src={closeButton} alt="close" id="close-button" onClick={closeNav} />
                 </div>
@@ -85,54 +83,48 @@ function Tat5() {
                 <div className="overlay-content" id="tat5-content">
 
                     <div id="image-container">
-                        <img src={tat5Overlay} alt="artist" id="artist-overlay-pic" />
+                        <img src={tat5} alt="artist" id="artist-overlay-pic" />
                     </div>
                     
                     <div id="text-and-slider">
+
                         <div id="only-text">
                             
                             <div id="artist-text-content">
                                 <div id="artist-headline-artistname">Künstlername</div>
-                                <div id="artist-headline-realname">bürgerlicher Name</div>
                                 <div id="themes-headline">Themen</div>
                                 <div className="single-theme">Blackwork</div>
                                 <div className="single-theme">Mandala</div>
                                 <div className="single-theme">Shitass</div>
                             </div>  
-
-                            <div id="appointment-container">
-                                <div id="appointment-inner-container">
-                                    <div id="appointment-headline">Termine</div>
-                                    <div className="appointment-detail">Termine1</div>
-                                    <div className="appointment-detail">Termine2</div>
-                                    <div className="appointment-detail">Termine3</div>
-                                    
-                                    <div id="artist-attributes">
-                                        <div className="further-artist-attributes">
-                                            <div>tättowiert seit:</div>
-                                            <div className="attribute-value">2022</div>
-                                        </div>
-
-                                        <div className="further-artist-attributes">
-                                            <div>geboren am:</div>
-                                            <div className="attribute-value">02.03.2022</div>
-                                        </div>
+                    
+                            <div id="sincewhen-container">
+                                <div id="sincewhen-inner-container">
+                                    <div>
+                                        tattowiert seit:
                                     </div>
-                                    
+                                    <div>
+                                        2022
+                                    </div>
                                 </div>
+                                
                             </div>
                             
                         </div>
-                        
-                        <div id="whole-slider-artist">
-                            <Slider {...settingsTat}>
-                                {images.map((img, idx) => (
-                                    <div className={idx === imageIndex ? "slide-artists active-slide" : "slide-artists nonactive-slide"}>
-                                        <img src={img} alt={img} />
-                                    </div>
-                                ))}
-                            </Slider>
+                
+
+                        <div id="whole-slider-container">
+                            <div id="whole-slider-artist">
+                                <Slider {...settingsTat}>
+                                    {images.map((img, idx) => (
+                                        <div className={idx === imageIndex ? "slide-artists active-slide" : "slide-artists nonactive-slide"}>
+                                            <img src={img} alt={img} />
+                                        </div>
+                                    ))}
+                                </Slider>
+                            </div>
                         </div>
+                        
                     </div>
                     
                 </div>

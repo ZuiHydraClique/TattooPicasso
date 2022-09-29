@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\Components",
+    "\\src\\Components\\Aritsts",
+    "\\src\\Components\\Aritsts\\AllArtists",
+    "\\src\\Components\\Carousel"
   ],
+  "SelectedNode": "\\src\\Components\\Aritsts\\AllArtists\\GeneralSingleArtist.css",
   "PreviewInSolutionExplorer": false
 }

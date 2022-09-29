@@ -2,9 +2,10 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 #whole-slider {
-    width: 80%;
+    width: 85%;
     margin: 10rem auto;
-    height: 570px;
+    transition: ease;
+    transition-duration: 0.7s;
 }
 
 .slide img {
@@ -14,7 +15,7 @@
 }
 
 .slide {
-    transform: scale(0.4);
+    transform: scale(0.7);
     transition: transform 700ms;
     opacity: 0.5;
 }
@@ -37,4 +38,15 @@
 .slick-dots li button:before {
     margin-top: 12px;
     color: white;
+}
+
+@media only screen and (max-width: 520px) {
+    #whole-slider {
+        width: 75%;
+        margin: 10rem auto;
+        height: 470px;
+
+        transition: ease;
+        transition-duration: 0.7s;
+    }
 }

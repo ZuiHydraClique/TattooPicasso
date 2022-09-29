@@ -17,32 +17,33 @@ function App() {
             flexDirection: "column"
         }}>
             <div id="whole-body">
+                <NavBar />
 
-            <NavBar />
+                <div id="carousel-scroll" style={{ height: "130px" }} />
+                
+                <Carousel />
 
-            <div style={{ height: "220px" }} />
+                <div id="carousel-ceo-spacer"/>
+                
+                <div id="ceo-scroll"></div>
+                <CEO />
 
-            <Carousel />
+                {/*<div id="allartists-scroll" style={{ height: "150px" }} />
 
-            <div style={{ height: "300px" }} />
+                <AllArtists />
 
-            <CEO />
+                <div style={{ height: "250px" }} />
+                
+                <div id="artgallery-scroll"></div>
+                <ArtGallery />*/}
 
-            <div style={{ height: "300px" }} />
+                <div id="maps-scroll" style={{ height: "150px" }}></div>
+                <GoogleMaps />
 
-            <AllArtists />
-
-            <div style={{ height: "300px" }} />
-            
-            <ArtGallery />
-
-            <div style={{ height: "500px" }} />
-
-            <GoogleMaps />
-
-            <div style={{ height: "600px" }} />
-
-            <Footer />
+                <div style={{ height: "300px" }} />
+                
+                <div id="contact-scroll"></div>
+                <Footer />
             </div>
         </div>
   );
