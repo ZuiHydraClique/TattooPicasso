@@ -36,16 +36,17 @@ function NavBar() {
                 {/*<img className={navbar ? 'cloud-image image-active' : 'cloud-image'} src={cloudsLeftGif} alt=""/>
                 <img className={navbar ? 'cloud-image-below image-active' : 'cloud-image-below'} src={cloudsLeft} alt=""/>*/}
                 <div className={navbar ? 'left-side-navbar activeLeft' : 'left-side-navbar'}>
-                    <Link className="navbar-text" to="allartists-scroll" spy={true} smooth={true}>
+                    <Link className="navbar-text" to="maps-scroll" spy={true} smooth={true}>
                         <div>
-                            Künstler
+                            Standort
                         </div>
                     </Link>
+                     {/*
                     <Link className="navbar-text" to="artgallery-scroll" spy={true} smooth={true}>
                         <div>
                             Gallery
                         </div>
-                    </Link>
+                    </Link>*/}
                 </div>
             </div>
 
@@ -57,11 +58,11 @@ function NavBar() {
                 {/*<img className={navbar ? 'cloud-image image-active' : 'cloud-image'} src={cloudsRightGif} alt=""/>
                 <img className={navbar ? 'cloud-image-below image-active' : 'cloud-image-below'} src={cloudsRight} alt=""/>*/}
                 <div className={navbar ? 'right-side-navbar activeRight' : 'right-side-navbar'}>                   
-                    <Link className="navbar-text" to="maps-scroll" spy={true} smooth={true}>
+                     {/*<Link className="navbar-text" to="maps-scroll" spy={true} smooth={true}>
                         <div>
                             Standort
                         </div>
-                    </Link>
+                    </Link>*/}
                     <Link className="navbar-text" to="contact-scroll" spy={true} smooth={true}>
                         <div>
                             Kontakt

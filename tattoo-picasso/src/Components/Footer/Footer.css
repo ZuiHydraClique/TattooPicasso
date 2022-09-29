@@ -22,9 +22,12 @@
 }
 
 .footer-headline {
-    font-size: 26px;
-    font-weight: bold;
+    font-size: 35px;
     margin-bottom: 10px;
+}
+
+.footer-attributes {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #footer-left-content {
@@ -47,7 +50,7 @@
 }
 
 #follow-us {
-    font-size: 20px;
+    font-size: 26px;
 }
 
 #footer-socails {

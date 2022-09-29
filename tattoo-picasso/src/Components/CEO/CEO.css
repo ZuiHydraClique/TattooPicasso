@@ -34,6 +34,11 @@
     transition-duration: 0.7s;
 }
 
+#ceo-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 22px;
+}
+
 #ceo-headline {
     width: 100%;
     text-align: center;
@@ -41,7 +46,7 @@
 }
 
 #ceo-name-headline {
-    font-size: 26px;
+    font-size: 40px;
 }
 
 @media only screen and (max-width: 910px) {

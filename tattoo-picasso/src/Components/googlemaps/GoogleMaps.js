@@ -15,6 +15,11 @@ function GoogleMaps() {
             <div id="place-headline">
                 Standort
             </div>
+            <div id="adress-block">
+                <a id="adress" href="https://www.google.de/maps/place/Tattoo+pikasso/@49.4407155,11.0524012,17z/data=!3m1!4b1!4m5!3m4!1s0x479f57fc28a32b99:0x656c9dfffc44d001!8m2!3d49.440712!4d11.0545899">
+                    Schwabacher Str. 35, 90439 Nürnberg
+                </a>
+            </div>
             <iframe title="standort"
                 width="90%" 
                 height="500" 
