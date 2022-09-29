@@ -21,13 +21,11 @@
 
 /*NAVBAR TEXT*/
 .navbar-text {
-    width: 250px; 
     color: #cab600;
     text-shadow: 0px 0px 1px gold;
     font-size: 40px;
     cursor: pointer;
     opacity: 1;
-    text-align: center;
 
     transition: ease;
     transition-duration: 0.7s;
@@ -36,19 +34,18 @@
 /*GENERAL SIDE NAVBARS*/
 .side-navbar {
     /*background-image: url("./NavbarImages/moon-left.gif");*/
-    display: flex;
     width: 50%;
     background-color: black;
 }
 
 /*LEFT SIDE NAVBAR*/
 .left-side-navbar {
-    width: 50%;
-    margin-left: 25%;
+    width: 100%;
+    margin-left: -25%;
     margin-top: 90px; 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     z-index: 20;
 
     transition: ease;
@@ -93,12 +90,12 @@
 
 /*RIGHT SIDE NAVBAR*/
 .right-side-navbar {
-    width: 50%;
+    width: 100%;
     margin-left: 25%;
     margin-top: 90px; 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     z-index: 20;
 
     transition: ease;
@@ -111,15 +108,113 @@
     margin-top: 40px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 580px) {
 
+    .navbar-text {
+        font-size: 35px;
+    }
 
-}
-
-@media only screen and (max-width: 500px) {
-
-}
-
-@media only screen and (max-width: 430px) {
+    .left-side-navbar {
+        width: 100%;
+        margin-left: -15%;
+        margin-top: 90px; 
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        z-index: 20;
     
+        transition: ease;
+        transition-duration: 1.5s;
+    }
+    
+    .left-side-navbar.activeLeft {
+        transition: ease;
+        transition-duration: 1.5s;
+        margin-top: 40px;
+    }
+
+    .right-side-navbar {
+        width: 100%;
+        margin-left: 15%;
+        flex-direction: row;
+        justify-content: flex-start;
+    
+        transition: ease;
+        transition-duration: 1.5s;
+    }
+    
+    .right-side-navbar.activeRight {
+        transition: ease;
+        transition-duration: 1.5s;
+        margin-top: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 460px) {
+    
+    #whole-navbar {
+        height: 180px;
+    }
+
+    .logo-navbar {
+        width: 140px;
+        height: 150px;
+    }
+
+    .left-side-navbar {
+        margin-top: 60px; 
+    }
+
+    .right-side-navbar {
+        margin-top: 60px; 
+    }
+}
+
+@media only screen and (max-width: 410px) {
+
+    #whole-navbar {
+        height: 180px;
+    }
+
+    .logo-navbar {
+        width: 120px;
+        height: 130px;
+    }
+
+    .navbar-text {
+        font-size: 25px;
+    }
+
+    .left-side-navbar {
+        width: 100%;
+        margin-left: -15%;
+        flex-direction: row;
+        justify-content: flex-end;
+    
+        transition: ease;
+        transition-duration: 1.5s;
+    }
+    
+    .left-side-navbar.activeLeft {
+        transition: ease;
+        transition-duration: 1.5s;
+        margin-top: 40px;
+    }
+
+    .right-side-navbar {
+        width: 100%;
+        margin-left: 15%;
+        flex-direction: row;
+        justify-content: flex-start;
+    
+        transition: ease;
+        transition-duration: 1.5s;
+    }
+    
+    .right-side-navbar.activeRight {
+        transition: ease;
+        transition-duration: 1.5s;
+        margin-top: 40px;
+    }
 }
