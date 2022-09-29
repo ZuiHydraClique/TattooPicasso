@@ -96,7 +96,7 @@ function Carousel() {
             
             <div id="slider-one">
                 <Slider {...settingsOne}>
-                    {images.map((img, idx) => (
+                    {images.map((img) => (
                         <div className="slide active-slide-one">
                             <img id="carousel-image" src={img} alt={img} />
                         </div>

@@ -39,13 +39,8 @@
     line-height: 22px;
 }
 
-#ceo-headline {
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-}
-
 #ceo-name-headline {
+    color: #cab600;
     font-size: 40px;
 }
 

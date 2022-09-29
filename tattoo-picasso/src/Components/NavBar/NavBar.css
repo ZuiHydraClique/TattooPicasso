@@ -22,7 +22,8 @@
 /*NAVBAR TEXT*/
 .navbar-text {
     width: 250px; 
-    color: white;
+    color: #cab600;
+    text-shadow: 0px 0px 1px gold;
     font-size: 40px;
     cursor: pointer;
     opacity: 1;
