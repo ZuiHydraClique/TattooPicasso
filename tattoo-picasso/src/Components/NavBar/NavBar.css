@@ -22,8 +22,13 @@
 
 /*NAVBAR TEXT*/
 .navbar-text {
-    color: #cab600;
-    text-shadow: 0px 0px 1px gold;
+
+    background: url(NavbarImages/gold.png) no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+
     font-size: 40px;
     cursor: pointer;
     opacity: 1;
