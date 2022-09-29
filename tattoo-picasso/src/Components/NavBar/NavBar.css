@@ -10,8 +10,6 @@
 
     transition: ease;
     transition-duration: 1.5s;
-
-    border-bottom: 1px solid white;
 }
 
 .whole-navbar.active {   

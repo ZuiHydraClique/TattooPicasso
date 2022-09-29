@@ -67,15 +67,43 @@ function Carousel() {
         beforeChange: (current, next) => setImageIndex(next)
     }
 
+    const settingsOne = {
+        dots: true,
+        infinite: true,
+        lazyLoad: true,
+        speed: 700,
+        slidesToShow: 1,
+        centerMode: true,
+        centerPadding: 0,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        //nextArrow: <NextArrow />
+        //prevArrow: <PrevArrow />
+        beforeChange: (current, next) => setImageIndex(next)
+    }
+
     return (
         <div id="whole-slider">
-            <Slider {...settings}>
-                {images.map((img, idx) => (
-                    <div className={idx === imageIndex ? "slide active-slide" : "slide nonactive-slide"}>
-                        <img id="carousel-image" src={img} alt={img} />
-                    </div>
-                ))}
-            </Slider>
+            <div id="slider-three">
+                <Slider {...settings}>
+                    {images.map((img, idx) => (
+                        <div className={idx === imageIndex ? "slide active-slide" : "slide nonactive-slide"}>
+                            <img id="carousel-image" src={img} alt={img} />
+                        </div>
+                    ))}
+                </Slider>
+            </div>
+            
+            <div id="slider-one">
+                <Slider {...settingsOne}>
+                    {images.map((img, idx) => (
+                        <div className="slide active-slide-one">
+                            <img id="carousel-image" src={img} alt={img} />
+                        </div>
+                    ))}
+                </Slider>
+            </div>
+            
         </div>
 
     );
