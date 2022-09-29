@@ -1,4 +1,5 @@
 .whole-navbar {
+    
     z-index: 1000;
     position: fixed;
     top: 0;
@@ -32,7 +33,26 @@
 }
 
 /*GENERAL SIDE NAVBARS*/
+.pic-left-up {
+    background-image: url("./NavbarImages/verschnörkelung.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    transition: ease;
+    transition-duration: 1.5s;
+}
+
+.pic-right-up {
+    background-image: url("./NavbarImages/verschnörkelung-rechts-oben.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+    transition: ease;
+    transition-duration: 1.5s;
+}
+
 .side-navbar {
+    
     /*background-image: url("./NavbarImages/moon-left.gif");*/
     width: 50%;
     background-color: black;
@@ -55,7 +75,7 @@
 .left-side-navbar.activeLeft {
     transition: ease;
     transition-duration: 1.5s;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 
@@ -105,8 +125,13 @@
 .right-side-navbar.activeRight {
     transition: ease;
     transition-duration: 1.5s;
-    margin-top: 40px;
+    margin-top: 60px;
 }
+
+@media only screen and (max-width: 700px) {
+
+}
+
 
 @media only screen and (max-width: 580px) {
 
@@ -116,7 +141,7 @@
 
     .left-side-navbar {
         width: 100%;
-        margin-left: -15%;
+        margin-left: -5%;
         margin-top: 90px; 
         display: flex;
         flex-direction: row;
@@ -130,12 +155,12 @@
     .left-side-navbar.activeLeft {
         transition: ease;
         transition-duration: 1.5s;
-        margin-top: 40px;
+        margin-top: 60px;
     }
 
     .right-side-navbar {
         width: 100%;
-        margin-left: 15%;
+        margin-left: 5%;
         flex-direction: row;
         justify-content: flex-start;
     
@@ -146,15 +171,15 @@
     .right-side-navbar.activeRight {
         transition: ease;
         transition-duration: 1.5s;
-        margin-top: 40px;
+        margin-top: 60px;
     }
 
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 560px) {
     
     #whole-navbar {
-        height: 180px;
+        height: 150px;
     }
 
     .logo-navbar {
@@ -171,10 +196,24 @@
     }
 }
 
+@media only screen and (max-width: 450px) {
+    .pic-left-up {
+        background-size: 6em 6em;
+        transition: ease;
+        transition-duration: 1.5s;
+    }
+    
+    .pic-right-up {
+        background-size: 6em 6em;
+        transition: ease;
+        transition-duration: 1.5s;
+    }
+}
+
 @media only screen and (max-width: 410px) {
 
     #whole-navbar {
-        height: 180px;
+        height: 130px;
     }
 
     .logo-navbar {
@@ -216,5 +255,30 @@
         transition: ease;
         transition-duration: 1.5s;
         margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .left-side-navbar {
+        margin-top: 45px; 
+    }
+
+    .right-side-navbar {
+        margin-top: 45px; 
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .logo-navbar.active-logo {
+        width: 80px;
+        height: 90px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    
+    .logo-navbar {
+        
+        width: 80px;
+        height: 90px;
     }
 }

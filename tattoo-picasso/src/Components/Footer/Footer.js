@@ -38,18 +38,15 @@ function Footer() {
                                 folge uns doch auf
                             </div>
                             <div id="footer-socails">
-                                <a href="https://www.facebook.com/profile.php?id=100063521922062">
-                                    <img className="socials-pic" src={facebookIcon} alt=""/>
-                                </a>
                                 <a href="https://www.instagram.com/tattoo_pikasso/">
                                     <img className="socials-pic" src={instagramIcon} alt=""/>
+                                </a>
+                                <a href="https://www.facebook.com/profile.php?id=100063521922062">
+                                    <img className="socials-pic" src={facebookIcon} alt=""/>
                                 </a>
                                 <a href="https://www.tiktok.com/@tattoopikasso">
                                     <img className="socials-pic" src={tiktokIcon} alt=""/>
                                 </a>
-
-
-                                    <img className="socials-pic" src={pinterestIcon} alt=""/>
                             
                             </div>
                         </div>
