@@ -40,6 +40,32 @@
     color: white;
 }
 
+@media only screen and (max-width: 706px) {
+    
+    .slick-dots li.slick-active button:before {
+        margin-top: 30px;
+        color: white;
+    }
+    
+    .slick-dots li button:before {
+        margin-top: 35px;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    
+    .slick-dots li.slick-active button:before {
+        margin-top: 50px;
+        color: white;
+    }
+    
+    .slick-dots li button:before {
+        margin-top: 55px;
+        color: white;
+    }
+}
+
 @media only screen and (max-width: 520px) {
     #whole-slider {
         width: 75%;

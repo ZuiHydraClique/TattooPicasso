@@ -277,7 +277,7 @@
 .nonactive-slide-artist {
     z-index: 0;
 }
-
+/*
 .slick-dots li.slick-active button:before {
     margin-top: 10px;
     color: white;
@@ -287,7 +287,7 @@
     margin-top: 12px;
     color: white;
 }
-
+*/
 @media only screen and (max-width: 1400px) {
     
     #artist-overlay-pic {

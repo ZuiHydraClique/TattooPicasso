@@ -1,14 +1,24 @@
 body {
   margin: 0;
   color: white;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Angelwish;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*
+@font-face {
+  font-family: "AlphaProta";
+  src: url('AlphaProta.ttf') format('truetype'), url('AlphaProta.ttf') format('truetype');
 }
+*/
+@font-face {
+  font-family: "Chomsky";
+  src: url('Chomsky.otf') format('opentype'), url('Chomsky.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Angelwish";
+  src: url('Angel wish.ttf') format('truetype'), url('Angel wish.ttf') format('truetype');
+}
+
