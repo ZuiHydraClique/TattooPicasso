@@ -2,7 +2,7 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 #slider-three {
-    width: 85%;
+    width: 75%;
     margin: 10rem auto;
     transition: ease;
     transition-duration: 0.7s;

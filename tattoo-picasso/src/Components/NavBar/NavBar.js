@@ -20,7 +20,7 @@ function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
     const changeSize = () => {
-        if(window.scrollY >= 500) {
+        if(window.scrollY >= 10) {
             setNavbar(true)
         } else {
             setNavbar(false)
