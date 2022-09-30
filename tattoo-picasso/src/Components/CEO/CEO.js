@@ -11,10 +11,11 @@ function CEO() {
                 <div id="whole-text">
                     <div id="ceo-name-headline">Zaur Pinkhasov</div>
                     <div id="ceo-text">
-                    Bereits seit X Jahren bin ich leidenschaftlicher Tattoowierer 
-                    und seit X Jahren habe ich meinen eigenen Tattooladen. 
-                    Am liebsten entwerfe ich realistische Kunstwerke und bringe diese 
-                    mit meinem über lange Zeit ausgebildetem Skill auf die Haut meiner Kunden.
+                    22 Jahre bin ich bereits leidenschaftlicher Tattoowierer 
+                    und seit 2013 führe ich mein eigenes Tattoostudio in Nürnberg. 
+                    Am liebsten entwerfe ich eigene Kunstwerke und bringe diese mit meiner 
+                    langjährigen Erfahrung auf die Haut meiner Kunden. Mein Ziel ist es den Wünschen 
+                    meiner Kunden nachzugehen und sie bestmöglich zu verwirklichen.
                     </div>
                 </div>
             </div>

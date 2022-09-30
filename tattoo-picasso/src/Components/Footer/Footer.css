@@ -75,6 +75,17 @@
     cursor: pointer;
 }
 
+#tel-num {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+#tel-num:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 940px) {
     
     #footer-inner-content {

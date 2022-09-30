@@ -25,7 +25,7 @@ function Footer() {
 
                         <div className="footer-item">
                             <div className="footer-headline">Kontakt</div>
-                            <div className="footer-attributes">Telefon: 01573/4347200</div>
+                            <div className="footer-attributes">Telefon: <a id="tel-num" href="tel:+4915734347200">01573/4347200</a></div>
                             <div className="footer-attributes">E-Mail: tattoopikasso@gmail.com</div>
                             <div className="footer-attributes">Instagram: tattoo_pikasso</div>
                             <div className="footer-attributes">Facebook: Tattoo Pikasso</div>

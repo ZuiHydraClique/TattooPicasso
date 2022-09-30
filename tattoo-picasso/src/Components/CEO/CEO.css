@@ -35,8 +35,9 @@
 }
 
 #ceo-text {
+    font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 22px;
+    line-height: 24px;
 }
 
 #ceo-name-headline {
