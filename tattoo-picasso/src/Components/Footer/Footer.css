@@ -26,6 +26,12 @@
 .footer-headline {
     font-size: 35px;
     margin-bottom: 10px;
+
+    background: url(FooterImages/gold.png) no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
 }
 
 .footer-attributes {

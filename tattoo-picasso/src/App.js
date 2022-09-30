@@ -3,7 +3,8 @@ import './App.css';
 
 /*Components*/
 import NavBar from './Components/NavBar/NavBar.js';
-import Carousel from './Components/Carousel/Carousel.js';
+import CarouselOne from './Components/Carousel/CarouselOne.js';
+import CarouselThree from './Components/Carousel/CarouselThree.js';
 import CEO from './Components/CEO/CEO.js';
 import Footer from './Components/Footer/Footer';
 import AllArtists from './Components/Aritsts/AllArtists';
@@ -21,7 +22,8 @@ function App() {
 
                 <div id="carousel-scroll" style={{ height: "130px" }} />
                 
-                <Carousel />
+                <CarouselOne />
+                <CarouselThree />
 
                 <div id="carousel-ceo-spacer"/>
                 

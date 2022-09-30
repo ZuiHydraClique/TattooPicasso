@@ -21,7 +21,7 @@
 
 #ceo-image {
     width: 400px;
-    border: 1px solid white;
+    border: 1px solid rgb(255, 234, 47);
     transition: ease;
     transition-duration: 0.7s;
 }
@@ -73,7 +73,7 @@
         border: 1px solid white;
         transition: ease;
         transition-duration: 0.7s;
-        margin-top: -350px;
+        margin-top: -50px;
     }
 
 }
@@ -97,7 +97,7 @@
         border: 1px solid white;
         transition: ease;
         transition-duration: 0.7s;
-        margin-top: -250px;
+        margin-top: -50px;
     }
 
 }

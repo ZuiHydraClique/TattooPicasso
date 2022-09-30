@@ -20,7 +20,7 @@ function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
     const changeSize = () => {
-        if(window.scrollY >= 200) {
+        if(window.scrollY >= 500) {
             setNavbar(true)
         } else {
             setNavbar(false)
@@ -32,7 +32,7 @@ function NavBar() {
     return (
         <div className={navbar ? 'whole-navbar active' : 'whole-navbar'}>
 
-            <div className="side-navbar pic-left-up">
+            <div className={navbar ? 'side-navbar pic-left-up side-active' : 'side-navbar pic-left-up'}>
                 {/*<img className={navbar ? 'cloud-image image-active' : 'cloud-image'} src={cloudsLeftGif} alt=""/>
                 <img className={navbar ? 'cloud-image-below image-active' : 'cloud-image-below'} src={cloudsLeft} alt=""/>*/}
                 <div className={navbar ? 'left-side-navbar activeLeft' : 'left-side-navbar'}>
@@ -54,7 +54,7 @@ function NavBar() {
                 <img className={navbar ? 'logo-navbar active-logo' : 'logo-navbar'} src={tattooPicassoLogo} alt="logo" />
             </Link>
 
-            <div className="side-navbar pic-right-up">
+            <div  className={navbar ? 'side-navbar pic-right-up side-active' : 'side-navbar pic-right-up'}>
                 {/*<img className={navbar ? 'cloud-image image-active' : 'cloud-image'} src={cloudsRightGif} alt=""/>
                 <img className={navbar ? 'cloud-image-below image-active' : 'cloud-image-below'} src={cloudsRight} alt=""/>*/}
                 <div className={navbar ? 'right-side-navbar activeRight' : 'right-side-navbar'}>                   
