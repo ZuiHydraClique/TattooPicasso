@@ -35,7 +35,7 @@ function Footer() {
                     <div>
                         <div id="footer-right-content">
                             <div id="follow-us">
-                                folge uns doch auf
+                                folgt uns doch auf
                             </div>
                             <div id="footer-socails">
                                 <a href="https://www.instagram.com/tattoo_pikasso/">
