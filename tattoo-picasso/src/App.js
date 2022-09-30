@@ -10,6 +10,7 @@ import Footer from './Components/Footer/Footer';
 import AllArtists from './Components/Aritsts/AllArtists';
 import GoogleMaps from './Components/googlemaps/GoogleMaps.js';
 import ArtGallery from './Components/ArtGallery/ArtGallery';
+import TattooCloseup from './Components/Pictures/TattooCloseup';
 
 function App() {
     return (
@@ -27,9 +28,11 @@ function App() {
 
                 <div id="carousel-ceo-spacer"/>
                 
+
                 <div id="ceo-scroll"></div>
                 <CEO />
 
+                <TattooCloseup />
                 {/*<div id="allartists-scroll" style={{ height: "150px" }} />
 
                 <AllArtists />

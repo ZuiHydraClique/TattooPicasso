@@ -11,10 +11,10 @@ function CEO() {
                 <div id="whole-text">
                     <div id="ceo-name-headline">Zaur Pinkhasov</div>
                     <div id="ceo-text">
-                        Wenn ihr ein krankes Tattoo wollt blyat. Der Dude is King ich
-                        zags dir. Es ist echt wild was der fuer einen ruhigen Finger hat.
-                        doispasdikpsd isaojdo  kdsaopk  ipoasjdi  capojcpasn poasj dpoajks poj
-                        asoikd pojd oipad 0p9ojdoa po jpoiasjk poad0od ikposas dpiaspod kpoias
+                    Bereits seit X Jahren bin ich leidenschaftlicher Tattoowierer 
+                    und seit X Jahren habe ich meinen eigenen Tattooladen. 
+                    Am liebsten entwerfe ich realistische Kunstwerke und bringe diese 
+                    mit meinem über lange Zeit ausgebildetem Skill auf die Haut meiner Kunden.
                     </div>
                 </div>
             </div>

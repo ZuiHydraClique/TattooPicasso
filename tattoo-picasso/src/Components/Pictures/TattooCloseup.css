@@ -1,0 +1,12 @@
+#tattoo-closeup {
+    box-shadow: 0px 0px 2px 0px gold;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 150px;
+    background-image: url(tattoo-closeup.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
