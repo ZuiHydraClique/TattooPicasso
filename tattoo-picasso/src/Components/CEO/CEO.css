@@ -27,6 +27,7 @@
 }
 
 #whole-text {
+    width: 400px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -35,12 +36,15 @@
 }
 
 #ceo-text {
+    width: 100%;
     font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 24px;
 }
 
 #ceo-name-headline {
+    width: 100%;
+    text-align: start;
     background: url(CEOImages/gold.png) no-repeat center center;
 	background-size: cover;
 	color: #fff;
@@ -65,6 +69,11 @@
         transition: ease;
         transition-duration: 0.7s;
     }
+
+    
+    #ceo-name-headline {
+        text-align: start;
+    }
 }
 
 @media only screen and (max-width: 520px) {
@@ -75,6 +84,15 @@
         transition: ease;
         transition-duration: 0.7s;
         margin-top: -50px;
+    }
+
+    #whole-text {
+        width: 300px;
+    }
+
+    #ceo-name-headline {
+        width: 300px;
+        text-align: center;
     }
 
 }
@@ -99,6 +117,10 @@
         transition: ease;
         transition-duration: 0.7s;
         margin-top: -50px;
+    }
+
+    #whole-text {
+        width: 400px;
     }
 
 }
