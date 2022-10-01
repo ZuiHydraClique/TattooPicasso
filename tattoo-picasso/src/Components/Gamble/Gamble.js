@@ -7,7 +7,7 @@ function Gamble() {
     return (
         <div className="whole-gamble">
             <a href="https://www.instagram.com/p/CjKm1VXtLJp/?utm_source=ig_web_copy_link">
-                <img id="gamble-image" src={gambleImage} />
+                <img id="gamble-image" src={gambleImage}/>
             </a>
         </div>
     );
