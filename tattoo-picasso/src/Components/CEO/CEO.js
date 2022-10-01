@@ -11,7 +11,7 @@ function CEO() {
                 <div id="whole-text">
                     <div id="ceo-name-headline">Zaur Pinkhasov</div>
                     <div id="ceo-text">
-                    22 Jahre bin ich bereits leidenschaftlicher Tattoowierer 
+                    22 Jahre, bin ich bereits leidenschaftlicher Tattoowierer 
                     und seit 2013 führe ich mein eigenes Tattoostudio in Nürnberg. 
                     Am liebsten entwerfe ich eigene Kunstwerke und bringe diese mit meiner 
                     langjährigen Erfahrung auf die Haut meiner Kunden. Mein Ziel ist es den Wünschen 
