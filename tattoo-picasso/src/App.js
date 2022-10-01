@@ -11,6 +11,7 @@ import AllArtists from './Components/Aritsts/AllArtists';
 import GoogleMaps from './Components/googlemaps/GoogleMaps.js';
 import ArtGallery from './Components/ArtGallery/ArtGallery';
 import TattooCloseup from './Components/Pictures/TattooCloseup';
+import Gamble from './Components/Gamble/Gamble';
 
 function App() {
     return (
@@ -23,9 +24,12 @@ function App() {
 
                 <div id="carousel-scroll" style={{ height: "130px" }} />
                 
+
                 <CarouselOne />
                 <CarouselThree />
 
+                <Gamble />
+                
                 <div id="carousel-ceo-spacer"/>
                 
 
