@@ -1,0 +1,25 @@
+
+/*HEADLINE*/
+#appointment-headline {
+    background: url(gold.png) no-repeat bottom center;
+	background-size: cover;
+	color: #fff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+/*APPOINTMENT BOX*/
+
+#whole-appointmentinput-box {
+    width: 70%;
+    border-radius: 10px;
+    background-color: gray;
+    height: 100px;
+}
+
+#inner-appointmentinput-box {
+
+}

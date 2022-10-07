@@ -12,6 +12,7 @@ import GoogleMaps from './Components/googlemaps/GoogleMaps.js';
 import ArtGallery from './Components/ArtGallery/ArtGallery';
 import TattooCloseup from './Components/Pictures/TattooCloseup';
 import Gamble from './Components/Gamble/Gamble';
+import Appointment from './Components/Appointment-Sektion/Appointment';
 
 function App() {
     return (
@@ -35,8 +36,7 @@ function App() {
 
                 <div id="ceo-scroll"></div>
                 <CEO />
-
-                <TattooCloseup />
+                
                 {/*<div id="allartists-scroll" style={{ height: "150px" }} />
 
                 <AllArtists />
@@ -44,7 +44,9 @@ function App() {
                 <div style={{ height: "250px" }} />
                 
                 <div id="artgallery-scroll"></div>
-                <ArtGallery />*/}
+                <ArtGallery />
+
+                <Appointment />*/}
 
                 <div id="maps-scroll" style={{ height: "150px" }}></div>
                 <GoogleMaps />
