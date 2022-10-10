@@ -16,10 +16,72 @@
 #whole-appointmentinput-box {
     width: 70%;
     border-radius: 10px;
-    background-color: gray;
-    height: 100px;
+    background-color: rgb(48, 48, 48);
+    padding: 40px;
 }
 
 #inner-appointmentinput-box {
 
+}
+
+/*TEXT*/
+.input-text {
+    font-size: 28px;
+    color: rgb(216, 216, 216);
+    margin-bottom: 5px;
+}
+
+/*INPUTS*/
+.reg-input {
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+    background-color: black;
+    border: 2px solid rgb(68, 68, 68);
+    color: white;
+    font-family: Chomsky;
+    font-size: 24px;
+}
+
+#name-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.half-input {
+    width: 46%;
+    height: 30px;
+    border-radius: 7px;
+    background-color: black;
+    border: 2px solid rgb(68, 68, 68);
+    color: white;
+    font-family: Chomsky;
+    font-size: 24px;
+}
+
+/*SINGLE-INPUT*/
+.single-input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*BUTTON LINE*/
+#button-line {
+    width: 100%;
+}
+
+#submit-button {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: Chomsky;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: red;
+}
+
+#submit-button:hover {
+    cursor: pointer;
 }

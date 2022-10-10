@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
+
+import ReactGa from 'react-ga';
 
 /*Components*/
 import NavBar from './Components/NavBar/NavBar.js';
@@ -15,6 +17,13 @@ import Gamble from './Components/Gamble/Gamble';
 import Appointment from './Components/Appointment-Sektion/Appointment';
 
 function App() {
+
+    useEffect (() => {
+        ReactGa.initialize('G-39MMWJCDWV')
+
+        ReactGa.pageview('/');
+    }, [])
+
     return (
         <div style={{
             display: "flex",
