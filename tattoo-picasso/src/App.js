@@ -15,6 +15,7 @@ import ArtGallery from './Components/ArtGallery/ArtGallery';
 import TattooCloseup from './Components/Pictures/TattooCloseup';
 import Gamble from './Components/Gamble/Gamble';
 import Appointment from './Components/Appointment-Sektion/Appointment';
+import CookieBanner from './Components/CookieBanner/CookieBanner';
 
 function App() {
 
@@ -30,6 +31,9 @@ function App() {
             flexDirection: "column"
         }}>
             <div id="whole-body">
+                
+                <CookieBanner />
+
                 <NavBar />
 
                 <div id="carousel-scroll" style={{ height: "130px" }} />
@@ -38,9 +42,11 @@ function App() {
                 <CarouselOne />
                 <CarouselThree />
 
+                <div id="gamble-scroll" style={{ height: "20px" }} />
+
                 <Gamble />
                 
-                <div id="carousel-ceo-spacer"/>
+                <div id="carousel-ceo-spacer" style={{ height: "50px" }} />
                 
 
                 <div id="ceo-scroll"></div>
