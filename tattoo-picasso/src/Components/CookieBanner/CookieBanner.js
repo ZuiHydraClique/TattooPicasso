@@ -5,7 +5,8 @@ import './CookieBanner.css';
 function CookieBanner() {
 
     useEffect (() => {
-        if(document.cookie == "bannerclicked=true") {
+        let isBannerClicked = localStorage.getItem("bannerClicked");
+        if(document.cookie == "bannerclicked=true" && isBannerClicked == "true") {
             document.getElementById('cookie-banner').style.opacity = 0;
         } else {
             document.getElementById('cookie-banner').style.opacity = 1;
@@ -15,6 +16,7 @@ function CookieBanner() {
     function removeBanner() {
         document.getElementById('cookie-banner').style.opacity = 0;
         document.cookie = "bannerclicked=true";
+        localStorage.setItem("bannerClicked", "true");
     }
 
     return (
