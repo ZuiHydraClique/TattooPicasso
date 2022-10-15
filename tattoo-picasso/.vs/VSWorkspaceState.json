@@ -3,10 +3,9 @@
     "",
     "\\src",
     "\\src\\Components",
-    "\\src\\Components\\Aritsts",
-    "\\src\\Components\\Aritsts\\AllArtists",
+    "\\src\\Components\\Appointment-Sektion",
     "\\src\\Components\\Carousel"
   ],
-  "SelectedNode": "\\src\\Components\\Aritsts\\AllArtists\\GeneralSingleArtist.css",
+  "SelectedNode": "\\src\\Components\\Appointment-Sektion\\Appointment.js",
   "PreviewInSolutionExplorer": false
 }
