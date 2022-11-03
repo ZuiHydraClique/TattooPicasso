@@ -17,7 +17,6 @@ import Image11 from './CarouselImages/carouselImg11.png';
 import Image12 from './CarouselImages/carouselImg12.png';
 import Image13 from './CarouselImages/carouselImg13.png';
 import Image14 from './CarouselImages/carouselImg14.png';
-import Image15 from './CarouselImages/carouselImg15.png';
 import Image16 from './CarouselImages/carouselImg16.png';
 import Image17 from './CarouselImages/carouselImg17.png';
 import Image18 from './CarouselImages/carouselImg18.png';
@@ -28,7 +27,7 @@ import './Carousel.css';
 
 const images = [
     Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10,
-     Image11, Image12, Image13, Image14, Image15, Image16, Image17, Image18, Image19, Image20 
+     Image11, Image12, Image13, Image14, Image16, Image17, Image18, Image19, Image20 
 ]
 
 

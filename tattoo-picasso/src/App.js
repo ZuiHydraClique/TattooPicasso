@@ -41,10 +41,6 @@ function App() {
 
                 <CarouselOne />
                 <CarouselThree />
-
-                <div id="gamble-scroll" style={{ height: "20px" }} />
-
-                <Gamble />
                 
                 <div id="carousel-ceo-spacer" style={{ height: "50px" }} />
                 
