@@ -10,7 +10,6 @@ import CarouselThree from './Components/Carousel/CarouselThree.js';
 import CEO from './Components/CEO/CEO.js';
 import Footer from './Components/Footer/Footer';
 import AllArtists from './Components/Aritsts/AllArtists';
-import GoogleMaps from './Components/googlemaps/GoogleMaps.js';
 import ArtGallery from './Components/ArtGallery/ArtGallery';
 import TattooCloseup from './Components/Pictures/TattooCloseup';
 import Gamble from './Components/Gamble/Gamble';
@@ -45,7 +44,7 @@ function App() {
                 <div id="carousel-ceo-spacer" style={{ height: "50px" }} />
                 
 
-                <div id="ceo-scroll"></div>
+                <div id="team-scroll"></div>
                 <CEO />
                 
                 {/*<div id="allartists-scroll" style={{ height: "150px" }} />
@@ -58,10 +57,6 @@ function App() {
                 <ArtGallery />
 
                 <Appointment />*/}
-
-                <div id="maps-scroll" style={{ height: "150px" }}></div>
-                <GoogleMaps />
-
                 
                 <div style={{height: "200px"}}></div>
                 <div id="contact-scroll"></div>

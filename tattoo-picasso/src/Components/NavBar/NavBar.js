@@ -36,17 +36,12 @@ function NavBar() {
                 {/*<img className={navbar ? 'cloud-image image-active' : 'cloud-image'} src={cloudsLeftGif} alt=""/>
                 <img className={navbar ? 'cloud-image-below image-active' : 'cloud-image-below'} src={cloudsLeft} alt=""/>*/}
                 <div className={navbar ? 'left-side-navbar activeLeft' : 'left-side-navbar'}>
-                    <Link className="navbar-text" to="maps-scroll" spy={true} smooth={true}>
+                     
+                    <Link className="navbar-text" to="team-scroll" spy={true} smooth={true}>
                         <div>
-                            Standort
+                            Team
                         </div>
                     </Link>
-                     {/*
-                    <Link className="navbar-text" to="artgallery-scroll" spy={true} smooth={true}>
-                        <div>
-                            Gallery
-                        </div>
-                    </Link>*/}
                 </div>
             </div>
 
