@@ -61,6 +61,8 @@ function App() {
                 <div id="appointment-scroller"></div>
                 <Appointment />
                 
+                <div style={{ height: "150px" }}></div>
+
                 <Footer />
                 <div id="bottom-pic-container">
                     <div id="pic-under-left">
