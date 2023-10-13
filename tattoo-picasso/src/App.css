@@ -28,7 +28,20 @@
 
 }
 
+#appointment-scroller {
+    height: 180px; 
+}
+
 @media only screen and (max-width: 580px) {
+
+    #ceo-scroller {
+        height: 100px;
+    }
+
+    #appointment-scroller {
+        height: 125px;
+    }
+
     #pic-under-left {
        background-size: 6em 6em;
     }

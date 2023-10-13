@@ -16,14 +16,6 @@ function Footer() {
                 <div id="footer-inner-content">
                     <div id="footer-left-content">
                         <div className="footer-item">
-                            <div className="footer-headline">Impressum</div>
-                            <div className="footer-attributes">Schwabacherstraße 35</div>
-                            <div className="footer-attributes">90439 Nürnberg</div>
-                            <div className="footer-attributes">Mo - Fr 11:00-19:00</div>
-                            <div className="footer-attributes">Sa 11:00-17:00</div>
-                        </div>
-
-                        <div className="footer-item">
                             <div className="footer-headline">Kontakt</div>
                             <div className="footer-attributes">Telefon: <a id="tel-num" href="tel:+4915734347200">01573/4347200</a></div>
                             <div className="footer-attributes">E-Mail: tattoopikasso@gmail.com</div>

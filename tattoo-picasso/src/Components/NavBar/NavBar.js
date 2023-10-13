@@ -10,8 +10,7 @@ import cloudsLeftGif from './NavbarImages/moon-left.gif';
 import cloudsLeft from './NavbarImages/moon-left.png';
 
 import cloudsRightGif from './NavbarImages/moon-right.gif';
-import cloudsRight from './NavbarImages/moon-right.png'
-;
+import cloudsRight from './NavbarImages/moon-right.png';
 import onlyMoon from './NavbarImages/moon-only.png';
 
 

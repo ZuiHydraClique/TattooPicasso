@@ -45,6 +45,7 @@ function App() {
                 
 
                 <div id="team-scroll"></div>
+                <div id="ceo-scroller"></div>
                 <CEO />
                 
                 {/*<div id="allartists-scroll" style={{ height: "150px" }} />
@@ -54,12 +55,12 @@ function App() {
                 <div style={{ height: "250px" }} />
                 
                 <div id="artgallery-scroll"></div>
-                <ArtGallery />
+                <ArtGallery />*/}
 
-                <Appointment />*/}
-                
-                <div style={{height: "200px"}}></div>
                 <div id="contact-scroll"></div>
+                <div id="appointment-scroller"></div>
+                <Appointment />
+                
                 <Footer />
                 <div id="bottom-pic-container">
                     <div id="pic-under-left">
