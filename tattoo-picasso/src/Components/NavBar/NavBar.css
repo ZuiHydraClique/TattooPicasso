@@ -1,20 +1,14 @@
 .whole-navbar {
-    
     z-index: 1000;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 220px;
+    height: 150px;
+    padding-bottom: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-    transition: ease;
-    transition-duration: 1.5s;
-}
-
-.whole-navbar.active {   
-    height: 135px;
+    background-color: black;
 
     transition: ease;
     transition-duration: 1.5s;
@@ -34,7 +28,7 @@
     opacity: 1;
 
     transition: ease;
-    transition-duration: 0.7s;
+    transition-duration: 1.5s;
 }
 
 /*GENERAL SIDE NAVBARS*/
@@ -57,8 +51,6 @@
 }
 
 .side-navbar {
-    
-    /*background-image: url("./NavbarImages/moon-left.gif");*/
     width: 50%;
     background-color: black;
 }
@@ -67,7 +59,7 @@
 .left-side-navbar {
     width: 100%;
     margin-left: -25%;
-    margin-top: 90px; 
+    margin-top: 60px; 
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -77,23 +69,16 @@
     transition-duration: 1.5s;
 }
 
-.left-side-navbar.activeLeft {
-    transition: ease;
-    transition-duration: 1.5s;
-    margin-top: 60px;
-}
-
-
 /*MIDDLE SIDE NAVBAR*/
 #middle-side-navbar {
     z-index: 100;
 }
 
 .logo-navbar {
-    width: 180px;
-    height: 200px;
+    height: 130px;
     cursor: pointer;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-left: -5px; 
     margin-right: -5px; 
     background-color: black;
@@ -102,22 +87,11 @@
     transition-duration: 1.5s;
 }
 
-.logo-navbar.active-logo {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    z-index: 100;
-    width: 115px;
-    height: 115px;
-    transition: ease;
-    transition-duration: 1.5s;
-}
-
-
 /*RIGHT SIDE NAVBAR*/
 .right-side-navbar {
     width: 100%;
     margin-left: 25%;
-    margin-top: 90px; 
+    margin-top: 60px; 
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -127,181 +101,34 @@
     transition-duration: 1.5s;
 }
 
-.right-side-navbar.activeRight {
-    transition: ease;
-    transition-duration: 1.5s;
-    margin-top: 60px;
-}
-
 @media only screen and (max-width: 730px) {
-    .right-side-navbar {
-        margin-left: 10%;
-    }
-
-    .left-side-navbar {
-        margin-left: -10%;
-    }
-}
-
-
-@media only screen and (max-width: 580px) {
-    .pic-left-up {
-        background-size: 6em 6em;
-        transition: ease;
-        transition-duration: 1.5s;
-    }
-    
-    .pic-right-up {
-        background-size: 6em 6em;
-        transition: ease;
-        transition-duration: 1.5s;
+    .whole-navbar {
+        height: 100px; /* Ändere die Höhe der Navbar für Bildschirme mit 730px oder weniger */
     }
 
     .navbar-text {
-        font-size: 35px;
+        font-size: 22px; /* Ändere die Schriftgröße für den Text in der Navbar */
     }
 
-    .left-side-navbar {
-        width: 100%;
-        margin-left: -5%;
-        margin-top: 90px; 
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        z-index: 20;
-    
-        transition: ease;
-        transition-duration: 1.5s;
+    .logo-navbar {
+        height: 80px;
+    }
+
+    #kontakt-text {
+        padding-left: -30px;
     }
     
-    .left-side-navbar.activeLeft {
-        transition: ease;
-        transition-duration: 1.5s;
-        margin-top: 60px;
+    .left-side-navbar {
+        margin-top: 40px; 
     }
 
     .right-side-navbar {
-        width: 100%;
-        margin-left: 5%;
-        flex-direction: row;
-        justify-content: flex-start;
-    
-        transition: ease;
-        transition-duration: 1.5s;
+        margin-top: 40px; 
     }
-    
-    .right-side-navbar.activeRight {
-        transition: ease;
-        transition-duration: 1.5s;
-        margin-top: 60px;
-    }
-
 }
 
-@media only screen and (max-width: 560px) {
-    
-    .side-navbar {
-        margin-bottom: 50px;
-    }
-
-    .side-active {
-        padding-bottom: 135px;
-    }
-
+@media only screen and (max-width: 350px) {
     .navbar-text {
-        font-size: 28px;
-    }
-
-    .logo-navbar {
-        width: 140px;
-        height: 150px;
-    }
-
-    .left-side-navbar {
-        margin-top: 60px;
-        margin-left: -10%;
-    }
-
-    .right-side-navbar {
-        margin-top: 60px;
-        margin-left: 3%;
-    } 
-    
-}
-
-@media only screen and (max-width: 450px) {
-    
-}
-
-@media only screen and (max-width: 410px) {
-
-    .side-navbar {
-        margin-bottom: 70px;
-    }
-
-    .side-active {
-        padding-bottom: 135px;
-    }
-
-    .logo-navbar {
-        width: 120px;
-        height: 130px;
-    }
-
-    .navbar-text {
-        font-size: 25px;
-    }
-    
-    .left-side-navbar.activeLeft {
-        transition: ease;
-        transition-duration: 1.5s;
-        margin-top: 50px;
-    }
-    
-    .right-side-navbar.activeRight {
-        transition: ease;
-        transition-duration: 1.5s;
-        margin-top: 50px;
-    }
-}
-
-@media only screen and (max-width: 390px) {
-    .logo-navbar {
-        padding-left: 5px;
-    }
-    
-    .left-side-navbar {
-        margin-top: 45px;
-        margin-left: -7%; 
-    }
-
-    .right-side-navbar {
-        margin-top: 45px; 
-        margin-left: 3%; 
-    }
-}
-
-@media only screen and (max-width: 370px) {
-
-    .logo-navbar.active-logo {
-        width: 80px;
-        height: 90px;
-        padding-top: 20px;
-        padding-bottom: 25px;
-    }
-    
-    .logo-navbar {
-        padding-top: 20px;
-        padding-bottom: 40px;
-        width: 80px;
-        height: 90px;
-    }
-
-    .side-navbar {
-        padding-bottom: 0px; 
-    }
-
-    .side-active {
-        padding-bottom: 135px;
+        font-size: 18px; /* Ändere die Schriftgröße für den Text in der Navbar */
     }
 }

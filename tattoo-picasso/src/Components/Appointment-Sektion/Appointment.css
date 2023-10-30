@@ -1,4 +1,3 @@
-
 /*HEADLINE*/
 #appointment-headline {
     background: url(gold.png) no-repeat bottom center;
@@ -12,16 +11,18 @@
 }
 
 /*APPOINTMENT BOX*/
-
 #whole-appointmentinput-box {
     width: 70%;
     border-radius: 10px;
     background-color: rgb(48, 48, 48);
-    padding: 40px;
+    padding: 40px; 
+    font-family: serif;
 }
 
 #inner-appointmentinput-box {
-
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 /*TEXT*/
@@ -39,7 +40,7 @@
     background-color: black;
     border: 2px solid rgb(68, 68, 68);
     color: white;
-    font-family: Chomsky;
+    
     font-size: 24px;
 }
 
@@ -60,7 +61,7 @@
     background-color: black;
     border: 2px solid rgb(68, 68, 68);
     color: white;
-    font-family: Chomsky;
+    
     font-size: 24px;
 }
 
@@ -73,20 +74,26 @@
 /*BUTTON LINE*/
 #button-line {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
 #submit-button {
-    font-size: 28px;
+    font-size: 24px;
     color: white;
-    font-family: Chomsky;
-    margin-top: 20px;
     padding: 10px;
     border-radius: 7px;
-    background-color: red;
+    background-color: rgb(94, 94, 94);
+    transition: ease;
+    transition-duration: 0.3s;
 }
 
 #submit-button:hover {
-    cursor: pointer;
+    cursor: pointer; 
+    background-color: rgb(14, 14, 14);
+    transition: ease;
+    transition-duration: 0.3s;
 }
 
 #pflichtfeld {
@@ -99,8 +106,22 @@
 }
 
 .error-message {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important; 
+    font-family: serif !important; 
     font-size: 14px;
     color: red;
     font-weight: lighter;
+}
+
+@media only screen and (max-width: 730px) {
+    .input-text {
+        font-size: 20px;
+    }
+
+    #pflichtfeld {
+        font-size: 14px;
+    }
+    
+    #submit-button {
+        font-size: 14px;
+    }
 }

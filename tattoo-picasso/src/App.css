@@ -32,15 +32,20 @@
     height: 180px; 
 }
 
-@media only screen and (max-width: 580px) {
+#team-scroll {
+    height: 120px;
+}
 
-    #ceo-scroller {
-        height: 100px;
-    }
+@media only screen and (max-width:  730px) {
+
 
     #appointment-scroller {
-        height: 125px;
+        height: 100px; 
     }
+
+}
+
+@media only screen and (max-width: 580px) {
 
     #pic-under-left {
        background-size: 6em 6em;

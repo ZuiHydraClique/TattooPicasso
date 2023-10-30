@@ -9,10 +9,6 @@ import CarouselOne from './Components/Carousel/CarouselOne.js';
 import CarouselThree from './Components/Carousel/CarouselThree.js';
 import CEO from './Components/CEO/CEO.js';
 import Footer from './Components/Footer/Footer';
-import AllArtists from './Components/Aritsts/AllArtists';
-import ArtGallery from './Components/ArtGallery/ArtGallery';
-import TattooCloseup from './Components/Pictures/TattooCloseup';
-import Gamble from './Components/Gamble/Gamble';
 import Appointment from './Components/Appointment-Sektion/Appointment';
 import CookieBanner from './Components/CookieBanner/CookieBanner';
 
@@ -35,7 +31,7 @@ function App() {
 
                 <NavBar />
 
-                <div id="carousel-scroll" style={{ height: "130px" }} />
+                <div id="carousel-scroll" style={{ height: "50px" }} />
                 
 
                 <CarouselOne />
@@ -45,7 +41,6 @@ function App() {
                 
 
                 <div id="team-scroll"></div>
-                <div id="ceo-scroller"></div>
                 <CEO />
                 
                 {/*<div id="allartists-scroll" style={{ height: "150px" }} />

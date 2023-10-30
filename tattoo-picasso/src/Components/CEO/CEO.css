@@ -36,8 +36,8 @@
 
 #ceo-text {
     width: 100%;
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-family: serif;
     line-height: 24px;
 }
 
@@ -116,10 +116,6 @@
         transition: ease;
         transition-duration: 0.7s;
         margin-top: -50px;
-    }
-
-    #whole-text {
-        width: 400px;
     }
 
 }
